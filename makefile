@@ -32,6 +32,6 @@ $(BIN_DIR):
 	@mkdir -p $@
 
 clean:
-	@rm $(OBJ); rm bin/App
+	@rm $(OBJ); rm bin/BulletinBoard
 
 $(foreach bdir,$(BIN_DIR),$(eval $(call make-goal,$(bdir))))
