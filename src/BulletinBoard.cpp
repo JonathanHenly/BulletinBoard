@@ -3,23 +3,46 @@
  * 
  * 
 **/
+#include "BulletinBoard.h"
 
-#include "SDL2/SDL.h"
-#include "Pixel.h"
+BulletinBoard::BulletinBoard() {
+  running = true;
+}
 
+int BulletinBoard::OnExecute() {
+  if(OnInit() == false) {
+    return -1;
+  }
+  
+  SDL_Event Event;
+  
+  while(running) {
+    while(SDL_PollEvent(&Event)) {
+      OnEvent(&Event);
+    }
+    
+    OnLoop();
+    OnRender();
+  }
+  
+  OnCleanup();
+  
+  return 0;
+}
+
+int main(int argc, char* argv[]) {
+  BulletinBoard theBB;
+  
+  return theBB.OnExecute();
+}
+
+/*
 int main(int argc, char* argv[]) {
   // Declare constant variables
   
   
   // Declare local variables
-  SDL_Window* window;
-  SDL_Renderer* renderer;
   SDL_Event event;
-  Pixel pixel;
-  bool quit;
-  
-  // Initialize local variables
-  quit = false;
   
   
   
@@ -28,6 +51,8 @@ int main(int argc, char* argv[]) {
     return 1;
   }
   
+  // initialize the private member variables 'window' and
+  // 'renderer'
   SDL_CreateWindowAndRenderer(0, 0,
                                   SDL_WINDOW_FULLSCREEN_DESKTOP,
                                   &window, &renderer);
@@ -61,14 +86,25 @@ int main(int argc, char* argv[]) {
   // SDL_Delay(5000);
   
   // display window until quit event
-  while(!quit) {
+  while(running) {
     SDL_WaitEvent(&event);
     
     switch(event.type) {
       case SDL_QUIT:
-        quit = true;
+        running = false;
+        break;
+      
+      case SDL_KEYDOWN:
+        switch(event.key.keysym.sym) {
+          // if escape key is pressed then quit program
+          case SDLK_ESCAPE:
+            running = false;
+            break;
+        }
+        
         break;
     }
+    
   }
   
   // always be sure to clean up
@@ -77,3 +113,4 @@ int main(int argc, char* argv[]) {
   return 0;
 
 }
+*/
