@@ -18,7 +18,7 @@ Search the [Googles](http://google.com)...
 
 ### SDL2.0 Installation Instructions
 
-Installation instructions from [Ask Ubuntu](http://askubuntu.com/questions/344512/what-is-the-general-procedure-to-install-development-libraries-in-ubuntu)
+Installation instructions from [Ask Ubuntu](http://askubuntu.com/questions/344512/what-is-the-general-procedure-to-install-development-libraries-in-ubuntu)...
 
 ### --assume-unchanged
 > makefile<br />
