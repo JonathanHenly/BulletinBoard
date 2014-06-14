@@ -5,11 +5,7 @@ C/++ project using the SDL2.0 API compiled with GCC.
 
 #### License
 
-     **MIT**
-
-#### --assume-unchanged
-> makefile<br />
-> .gitignore
+MIT
 
 | Thing | Version |
 | --- | --- |
@@ -18,10 +14,14 @@ C/++ project using the SDL2.0 API compiled with GCC.
 
 ### GNU GCC Installation Instructions
 
-Search the Googles...
+Search the [Googles](http://google.com)...
 
 ### SDL2.0 Installation Instructions
 
-From [Ask Ubuntu](http://askubuntu.com/questions/344512/what-is-the-general-procedure-to-install-development-libraries-in-ubuntu)
+Installation instructions from [Ask Ubuntu](http://askubuntu.com/questions/344512/what-is-the-general-procedure-to-install-development-libraries-in-ubuntu)...
+
+### --assume-unchanged
+> makefile<br />
+> .gitignore<br />
 
 
