@@ -1,3 +1,12 @@
+/****************************************************************
+ * Header file for the Pixel class.
+ * 
+ * 
+ * 
+ * Author/copyright: Jonathan Henly. All rights reserved.
+ * Date: 12 June 2014
+ * 
+**/
 #ifndef PIXEL_H
 #define PIXEL_H
 
@@ -14,4 +23,4 @@ public:
 
 };
   
-#endif
+#endif // PIXEL_H
