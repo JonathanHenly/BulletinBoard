@@ -1,7 +1,8 @@
 BulletinBoard
 =============
 
-C/++ project using the SDL2.0 API compiled with GCC.
+C/++ project using the SDL2.0 API and the X11 API.<br />
+BulletinBoard is compiled with GCC, it's simple just type 'make' into the terminal when you're in the BulletinBoard directory.
 
 #### License
 
@@ -11,6 +12,7 @@ MIT
 | --- | --- |
 | GCC | gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2 |
 | SDL2.0 | SDL-2.0.3-8795 |
+| X11 | OS Dependent |
 
 ### GNU GCC Installation Instructions
 
