@@ -5,8 +5,9 @@ C/++ project using the SDL2.0 API and the X11 API.<br />
 BulletinBoard is compiled with GCC, it's simple just type 'make' into the terminal when you're in the BulletinBoard directory.
 
 #### License
-
 MIT
+
+###API and Compiler Versions<hr/>
 
 | Thing | Version |
 | --- | --- |
@@ -22,8 +23,6 @@ Search the [Googles](http://google.com)...
 
 Installation instructions from [Ask Ubuntu](http://askubuntu.com/questions/344512/what-is-the-general-procedure-to-install-development-libraries-in-ubuntu)...
 
-### --assume-unchanged
-> makefile<br />
-> .gitignore<br />
-
+###--assume-unchanged<hr/>
+<pre>-> makefile<br />-> .gitignore</pre>
 
